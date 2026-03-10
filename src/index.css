@@ -1,0 +1,146 @@
+:root {
+    --darkBlue: #121215;
+    --btn-green: #22C55E;
+    --darker-green: #0B250E;
+    --dark-green: #0F2A13;
+    --gold: #FFB412;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    background-color: var(--darker-green);
+}
+
+
+/* NAVIGATION BAR */
+
+#nav-bar {
+    background-color: var(--darkBlue);
+    padding: 25px;
+    max-width: 100%;
+    min-width: fit-content;
+    display: flex;
+    justify-content: end;
+}
+
+button {
+    background-color: var(--btn-green);
+    border: none;
+    cursor: pointer;
+}
+
+.nav-bar-button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.link-item {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+
+/* DASHBOARD STYLING */
+
+#dashboard {
+    background-color: var(--dark-green);
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    margin: 50px auto 0 auto;
+}
+
+#dashboard>button {
+    background-color: var(--darkBlue);
+    color: var(--gold);
+    border-radius: 10px;
+    display: flex;
+    font-size: 16px;
+    width: 190px;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    padding: 15px 10px;
+}
+
+
+/* ADD INCOME/EXPENSES PAGE */
+
+#add-tabs {
+    background-color: var(--dark-green);
+    width: 500px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+}
+
+.add-income-btn {
+    background-color: var(--darker-green);
+    color: white;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+}
+
+.add-expenses-btn {
+    background-color: var(--darker-green);
+    color: white;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+}
+
+.active-btn {
+    background-color: #023307;
+    color: var(--gold);
+}
+
+.add-expenses-form {
+    background-color: var(--dark-green);
+    width: 500px;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.add-expenses-form-el {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.add-expenses-form-el>input,
+select {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.add-expenses-form-el>button {
+    width: 120px;
+    background-color: var(--darkBlue);
+    color: var(--gold);
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px auto 0 auto;
+    font-size: 18px;
+}
+
+
+/* FOOTER */
+
+#footer {
+    background-color: var(--darkBlue);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+}
