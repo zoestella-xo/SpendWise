@@ -1,5 +1,7 @@
 export default function AddIncome() {
-    function handleSubmit(){
+    function handleSubmit(e){
+        e.preventDefault();
+        
         alert("Income Added!");
     }
 
@@ -8,7 +10,7 @@ export default function AddIncome() {
         <form 
             onSubmit={()=>handleSubmit()} 
             method="POST" 
-            class="add-expenses-form-el"
+            className="add-expenses-form-el"
         >
                 <label htmlFor="amount">Amount:</label>
                 <input type="number" id="amount" name="amount" placeholder="eg. 50000" required />
@@ -19,7 +21,7 @@ export default function AddIncome() {
                 <label htmlFor="income-stream">Income Stream:</label>
                 <input type="text" id="income-stream" name="income-stream" required/>
 
-                <button onClick={handleSubmit}>+ADD</button>
+                <button type="submit">+ADD</button>
             </form>
         </div>
     )

@@ -1,5 +1,6 @@
 export default function AddExpenses() {
-    function handleSubmit(){
+    function handleSubmit(e){
+        e.preventDefault();
         alert("Expense added successfully!");
     }
 
@@ -8,7 +9,7 @@ export default function AddExpenses() {
             <form 
                 onSubmit={()=>handleSubmit()} 
                 method="POST" 
-                class="add-expenses-form-el"
+                className="add-expenses-form-el"
             >
                 <label htmlFor="amount">Amount:</label>
                 <input type="number" id="amount" name="amount" placeholder="eg. 50000" required />
@@ -28,7 +29,7 @@ export default function AddExpenses() {
                     <option value="other">Others</option>
                 </select>
 
-                <button onClick={handleSubmit}>+ADD</button>
+                <button type="submit">+ADD</button>
             </form>
         </div>
     )
