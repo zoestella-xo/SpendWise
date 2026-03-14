@@ -1,6 +1,7 @@
 export default function AddExpenses() {
     function handleSubmit(e){
         e.preventDefault();
+        const expenses = e.target.value.amount;
         alert("Expense added successfully!");
     }
 
